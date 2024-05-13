@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Lilist from "./myComponents/Lilist";
 
 function App() {
   const initialState = [
@@ -64,13 +65,3 @@ function App() {
 }
 
 export default App;
-
-function Lilist({ item, removeUser }) {
-  return (
-    <li id={item.id}>
-      <p>이름 : {item.name}</p>
-      <p>나이 : {item.age}</p>
-      <button onClick={removeUser}>삭제</button>
-    </li>
-  );
-}
